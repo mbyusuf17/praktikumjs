@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Picker</title>
+</head>
+<body style="margin: 200px"> 	
+    		
+    <select onchange="changepicture();" id="picturelist">			
+        <option value="https://statik.tempo.co/data/2016/06/22/id_517426/517426_620.jpg">senjata api</option>			
+        <option value="https://cdn11.bigcommerce.com/s-9mcepdq780/images/stencil/1280x1280/products/574/2037/1__81313.1556063222.jpg?c=2">M4A1</option>			
+        <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/AK-47_type_II_Part_DM-ST-89-01131.jpg/800px-AK-47_type_II_Part_DM-ST-89-01131.jpg">AK 47</option>			
+        <option value="https://gundigest.com/wp-content/uploads/870-Marine.jpg">m870 Remington</option>
+        <option value="https://www.tacticalstore.se/images/normal/krytac-kriss-vector-aeg-69317.jpg">Kriss vector</option>			
+        <option value="https://machinegunamericaorlando.com/wp-content/uploads/2016/08/fn-m249-saw-slr.png">M249</option>
+        <option value="https://www.aceros-de-hispania.com/airsoft-guns/airsoft-AC12365.jpg">m134 minigun</option>	
+        <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/M82A1_barrett.jpeg/300px-M82A1_barrett.jpeg">barreta m82</option>
+        <option value="https://images-na.ssl-images-amazon.com/images/I/71rHkxPQaML._SL1500_.jpg">kar 98</option>
+        <option value="https://osloskytesenter.no/wp-content/uploads/pck/102206-1_102206.jpg">desert eagle</option>			
+    </select>	
+	
+    <br>	
+    <img src="https://statik.tempo.co/data/2016/06/22/id_517426/517426_620.jpg" style="width: 100%" id="image"> 
+</body>
+
+<script type="text/javascript">	
+    function changepicture() {
+    let image = document.getElementById("picturelist").value;		
+                document.getElementById("image").src = image;		
+            alert("This is picture of " + image);
+        }
+</script>
+
+</html>
